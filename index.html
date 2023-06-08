@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Drag and Drop</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <h1 id="heading1">
+      Drag the elements from the 1st container to the 2nd container.
+    </h1>
+    <div class="container">
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag2"
+          width="88"
+          height="31"
+        >
+          Assignment
+        </p>
+        <img
+          src="https://thumbs.dreamstime.com/z/woman-praying-free-bird-enjoying-nature-sunset-background-hope-concept-94227839.jpg"
+          alt="image"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag1"
+          width="88"
+          height="31"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+          alt="insta_logo"
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag1"
+          width="88"
+          height="31"
+        />
+        <p
+          draggable="true"
+          ondragstart="drag(event)"
+          id="drag2"
+          width="88"
+          height="31"
+        >
+          Ankit Kumar
+        </p>
+      </div>
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="reset-button">
+      <button onclick="resetContainers()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
